@@ -3,7 +3,7 @@ import datetime
 import time
 st.header("Welcome To App")
 g=st.button(label="Run")
-tm=st.empty()
+tm=st.empty
 if g:
   st.write('hi')
   st.write(datetime.datetime.now())
