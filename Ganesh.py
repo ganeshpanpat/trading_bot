@@ -6,7 +6,7 @@ g=st.button(label="Run")
 tm=st.empty
 with st.empty():
     for seconds in range(160):
-        st.write(f"⏳ {seconds} seconds have passed")
+        st.write(f"⏳ {datetime.datetime.now()}")
         time.sleep(1)
     st.write("✔️ 1 minute over!")
 if g:
