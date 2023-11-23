@@ -5,7 +5,7 @@ st.header("Welcome To App")
 g=st.button(label="Run")
 tm=st.empty
 with st.empty():
-    for seconds in range(160):
+    for seconds in range(10):
         st.write(f"⏳ {datetime.datetime.now()}")
         time.sleep(1)
     st.write("✔️ 1 minute over!")
