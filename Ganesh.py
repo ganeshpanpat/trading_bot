@@ -8,7 +8,7 @@ if g:
   st.write('hi')
   st.write(datetime.datetime.now())
   for i in range(0,10):
-    tm.text=datetime.datetime.now()
+    st.write(datetime.datetime.now())
     time.sleep(1)
     
   
