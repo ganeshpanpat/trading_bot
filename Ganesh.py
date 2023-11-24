@@ -4,6 +4,7 @@ import time
 st.header("Welcome To App")
 g=st.button(label="Run")
 tm=st.empty
+global i
 i=0
 st.write('Nifty')
 nf_ce=st.button(label="Nifty CE")
