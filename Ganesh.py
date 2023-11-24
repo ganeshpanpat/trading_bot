@@ -5,7 +5,7 @@ st.header("Welcome To App")
 g=st.button(label="Run")
 tm=st.empty
 i=0
-col1,col2=st.column(2)
+col1,col2=st.column(2,'small')
 with col1:
     st.write('Nifty')
     nf_ce=st.button(label="Nifty CE")
