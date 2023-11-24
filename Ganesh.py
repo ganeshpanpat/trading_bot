@@ -1,6 +1,16 @@
 import streamlit as st
 import datetime
 import time
+import yfinance as yf
+def get_stock_ltp(symbol):
+    dt=yf.Ticker(symbol)
+    ltp=round(dt.get_fast_info()['lastPrice'],2)
+    chng=round(ltp-dt.get_fast_info()['regularMarketPreviousClose'],2)
+    return (f'{symbol} LTP {ltp} {chng}')
+with st.sidebar:
+    st.write(f'{datetime.datetime.now()}')
+    st.write(get_stock_ltp('^NSEI'))
+    st.write(get_stock_ltp('^NSEBABK'))
 st.header("Welcome To App")
 g=st.button(label="Run")
 tm=st.empty
