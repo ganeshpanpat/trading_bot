@@ -5,6 +5,10 @@ st.header("Welcome To App")
 g=st.button(label="Run")
 tm=st.empty
 i=0
+nf_ce=st.button(label="Nifty CE")
+nf_pe=st.button(label="Nifty PE")
+bnf_ce=st.button(label="Bank Nifty CE")
+bnf_pe=st.button(label="Bank Nifty PE")
 with st.empty():
     while True:
         i=i+1
