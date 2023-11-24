@@ -14,14 +14,12 @@ bnf_ce=st.button(label="Bank Nifty CE")
 bnf_pe=st.button(label="Bank Nifty PE")
 if nf_ce:
     st.write('Nifty Ce Call Buy')
-def run_code():
-    with st.empty():
-        while True:
-            i=i+1
-            st.write(f"{i} ⏳ {datetime.datetime.now()}")
-            time.sleep(1)
-        st.write("✔️ 1 minute over!")
-run_code()
+with st.empty():
+    while True:
+        i=i+1
+        st.write(f"{i} ⏳ {datetime.datetime.now()}")
+        time.sleep(1)
+    st.write("✔️ 1 minute over!")
 if g:
   st.write('hi')
   st.write(datetime.datetime.now())
