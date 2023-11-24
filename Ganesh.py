@@ -13,7 +13,7 @@ bnf_ce=st.button(label="Bank Nifty CE")
 bnf_pe=st.button(label="Bank Nifty PE")
 if nf_ce:
     st.write('Nifty Ce Call Buy')
-@st.catch_resource
+@st.catch
 def run_code():
     with st.empty():
         while True:
