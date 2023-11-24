@@ -11,7 +11,7 @@ with col1:
     nf_ce=st.button(label="Nifty CE")
     nf_pe=st.button(label="Nifty PE")
 with col2:
-    st.write('Bank Nifty)
+    st.write('Bank Nifty')
     bnf_ce=st.button(label="Bank Nifty CE")
     bnf_pe=st.button(label="Bank Nifty PE")
 with st.empty():
