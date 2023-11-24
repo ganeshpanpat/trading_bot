@@ -5,7 +5,7 @@ st.header("Welcome To App")
 g=st.button(label="Run")
 tm=st.empty
 i=0
-st.sidebar()
+st.sidebar
 col1,col2=st.columns(2)
 with col1:
     st.write('Nifty')
