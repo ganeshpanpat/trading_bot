@@ -5,16 +5,15 @@ st.header("Welcome To App")
 g=st.button(label="Run")
 tm=st.empty
 i=0
-st.sidebar
 col1,col2=st.columns(2)
 with col1:
     st.write('Nifty')
-    nf_ce=st.button(label="Nifty CE")
-    nf_pe=st.button(label="Nifty PE")
+    nf_ce=col1.st.button(label="Nifty CE")
+    nf_pe=col1.st.button(label="Nifty PE")
 with col2:
     st.write('Bank Nifty')
-    bnf_ce=st.button(label="Bank Nifty CE")
-    bnf_pe=st.button(label="Bank Nifty PE")
+    bnf_ce=col2.st.button(label="Bank Nifty CE")
+    bnf_pe=col2.st.button(label="Bank Nifty PE")
 with st.empty():
     while True:
         i=i+1
