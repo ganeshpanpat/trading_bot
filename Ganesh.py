@@ -42,7 +42,7 @@ if st.session_state['user_name']!='Guest':
             lot_size=st.number_input(label='Lot Size',min_value=1,max_value=10,value=1)
             target=st.number_input(label='Target',min_value=5, max_value=20,value=5)
         with col6:
-            target_type=st.selection(label='Target Type', options=['Points','Per Cent'],index=0)
+            target_type=st.select(label='Target Type', options=['Points','Per Cent'],index=0)
             sl=st.number_input(label='Stop Loss',min_value=5, max_value=20,value=5)
         if nf_ce:manual_buy('Nifty','CE',19700)
         if nf_pe:manual_buy('Nifty','PE',19700)
