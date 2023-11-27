@@ -48,7 +48,7 @@ if st.session_state['user_name']!='Guest':
         if nf_pe:manual_buy('Nifty','PE',19700)
         if bnf_ce:manual_buy('Bank Nifty','CE',43700)
         if bnf_ce:manual_buy('Bank Nifty','PE',43700)
-    update_timr=st.empty()
+    update_time=st.empty()
     my_df=st.empty()
     while True:
         current_time=datetime.datetime.now()
