@@ -24,8 +24,8 @@ if st.session_state['user_name']=='Guest':
     login_btn=st.button(label='Login')
     if login_btn: login()
 if st.session_state['user_name']!='Guest':
-    st.header(f'Welcome {st.session_state['user_name']}')
-    st.write(f'Last Login {st.session_state['login_time']}')
+    st.header(f'Welcome {st.session_state["user_name"]}')
+    st.write(f'Last Login {st.session_state["login_time"]}')
     def manual_buy(symbol,ce_pe,index_ltp):
         st.sucess(f'Buy {symbol} {ce_pe} {index_ltp} {datetime.datetime.now()}')
     with st.sidebar:
