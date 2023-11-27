@@ -34,7 +34,7 @@ if st.session_state['user_name']!='Guest':
         with col1: nf_ce=st.button(label='Nifty Ce')
         with col2: nf_pe=st.button(label='Nifty Pe')
         st.write('BANKNIFTY')
-        col13,col4=st.columns(2)
+        col3,col4=st.columns(2)
         with col3: bnf_ce=st.button(label='BNF Nifty Ce')
         with col4: bnf_pe=st.button(label='BNF Nifty Pe')
         col5,col6=st.columns(2)
